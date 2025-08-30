@@ -1,0 +1,14 @@
+networks:
+  default:
+    driver: bridge
+    name: roboshop
+
+volumes:
+  mongodb:
+
+services:
+  mongodb:
+    image: mukhtarsheikh/mongodb:v1
+    container_name: mongodb
+    volumes:
+    - mongodb:/data/db
