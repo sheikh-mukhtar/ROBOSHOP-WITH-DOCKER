@@ -37,7 +37,7 @@ services:
     - catalogue
     - redis
   mysql:
-    image: mukhtarsheikh/mysql:v1
+    image: mukhtarsheikh/mysql:v2
     container_name: mysql
     volumes:
     - mysql:/var/lib/mysql
